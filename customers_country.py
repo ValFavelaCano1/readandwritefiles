@@ -5,6 +5,8 @@ outfile = open("customers_country.csv", "w")
 
 customers = csv.reader(infile, delimiter=",")
 
+next(customers)
+
 outfile.write("First Name, Last Name, Country\n")
 
 for row in customers:
